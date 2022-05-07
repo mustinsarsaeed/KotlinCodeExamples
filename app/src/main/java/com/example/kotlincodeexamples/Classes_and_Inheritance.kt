@@ -5,6 +5,10 @@
  * abstract class, overriding, and private vs. public variables.
  */
 
+@file:Suppress("KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference",
+    "KDocUnresolvedReference"
+)
+
 package com.example.kotlincodeexamples
 
 import kotlin.math.PI
@@ -17,14 +21,14 @@ fun main() {
 
     with(squareCabin) {
         println("\nSquare Cabin\n=======")
-        println("Capacity: ${capacity}")
-        println("Material : ${buildingMaterial}")
+        println("Capacity: $capacity")
+        println("Material : $buildingMaterial")
         println("Floor Area : ${floorArea()}")
     }
     with(roundHut) {
         println("\nRound Hut\n=======")
-        println("Material : ${buildingMaterial}")
-        println("Capacity: ${capacity}")
+        println("Material : $buildingMaterial")
+        println("Capacity: $capacity")
         println("Floor Area: ${floorArea()}")
         println("Has Room? ${hasRoom()}")
         getRoom()
@@ -34,8 +38,8 @@ fun main() {
     }
     with(roundTower) {
         println("\nRound Tower\n=======")
-        println("Material : ${buildingMaterial}")
-        println("Capacity: ${capacity}")
+        println("Material : $buildingMaterial")
+        println("Capacity: $capacity")
         println("Floor Area: ${floorArea()}")
         println("Carpet Size : ${calculateMaxCarpetSize()}")
     }
@@ -47,7 +51,7 @@ fun main() {
  * Checking and getting a room are implemented here
  * because they are the same for all Dwelling subclasses.
  *
- * @param residents Current number of residents
+ * residents Current number of residents
  */
 
 abstract class Dwelling(private var resident: Int) {
@@ -109,7 +113,7 @@ class SquareCabin(resident: Int, private val length : Double) : Dwelling(residen
  * @param residents Current number of residents
  * @param radius Radius
  */
-open class RoundHut(val resident: Int, val radius : Double) : Dwelling(resident) {
+open class RoundHut(resident: Int, private val radius : Double) : Dwelling(resident) {
     override val buildingMaterial: String = "Straw"
     override val capacity: Int = 4
     /**
@@ -138,7 +142,7 @@ open class RoundHut(val resident: Int, val radius : Double) : Dwelling(resident)
  * @param radius Radius
  * @param floors Number of stories
  */
-class RoundTower(resident: Int, radius: Double, val floors: Int = 2) : RoundHut(resident, radius) {
+class RoundTower(resident: Int, radius: Double, private val floors: Int = 2) : RoundHut(resident, radius) {
     override val buildingMaterial: String = "Stone"
     // Capacity depends on the number of floors.
     override val capacity: Int = floors * 4
