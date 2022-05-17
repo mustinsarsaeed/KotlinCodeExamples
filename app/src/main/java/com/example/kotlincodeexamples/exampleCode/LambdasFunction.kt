@@ -1,4 +1,4 @@
-package com.example.kotlincodeexamples
+package com.example.kotlincodeexamples.exampleCode
 
 fun main() {
     val triple : (Int) -> Int = {a: Int -> a * 3}  //a: Int -> a replace with it

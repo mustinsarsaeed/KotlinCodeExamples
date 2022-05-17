@@ -1,4 +1,4 @@
-package com.example.kotlincodeexamples
+package com.example.kotlincodeexamples.exampleCode
 
 open class Item(val name: String, val price: Int)
 

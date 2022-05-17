@@ -1,4 +1,4 @@
-package com.example.kotlincodeexamples
+package com.example.kotlincodeexamples.exampleCode
 
 fun main() {
     val guestsPerFamily = listOf(2, 4, 1, 3)

@@ -1,4 +1,4 @@
-package com.example.kotlincodeexamples
+package com.example.kotlincodeexamples.exampleCode
 
 fun main() {
     val names = listOf("Jessica", "Henry", "Alicia", "Jose")

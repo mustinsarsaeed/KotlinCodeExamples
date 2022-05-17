@@ -1,4 +1,4 @@
-package com.example.kotlincodeexamples
+package com.example.kotlincodeexamples.exampleCode
 
 fun main() {
     val numbers = listOf(0,3,8,4,0,5,5,8,9,2)

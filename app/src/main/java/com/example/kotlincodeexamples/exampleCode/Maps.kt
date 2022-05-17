@@ -1,4 +1,4 @@
-package com.example.kotlincodeexamples
+package com.example.kotlincodeexamples.exampleCode
 
 /*Learn about Maps
     A map is useful when you have pairs of data,
