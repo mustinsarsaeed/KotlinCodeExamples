@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">KotlinCodeExamples</string>
+    <string name="enter_value">Enter Value</string>
 </resources>
