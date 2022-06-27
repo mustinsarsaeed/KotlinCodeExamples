@@ -46,7 +46,7 @@ class SharedPrefrences : AppCompatActivity() {
             editor.clear()
             editor.apply()
             binding.tvValue.text = ("").toString()
-            binding.tvValue.
+            binding.tvValue.text = ("").toString()
         })
     }
 }
